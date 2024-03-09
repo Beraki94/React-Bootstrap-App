@@ -9,19 +9,17 @@ const Navigation = () => {
             width: "100%",
             height: "64px",
             borderBottom: "1px solid black",
-            position: "fixed",
             zIndex: "1000",
-    
         },
 
         img: {
             height: "32px"
-        }
+        },
     }
   return (
     <header style = {styles.header}>
         <Navbar expand="lg" className="bg-body-tertiary">
-            <Container>
+            <Container style={styles.Container}>
                 <Navbar.Brand href="#home"><img src='images/GMC.png' alt='gmc-logo' style={styles.img}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

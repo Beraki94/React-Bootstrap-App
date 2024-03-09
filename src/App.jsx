@@ -1,13 +1,9 @@
-import './App.css'
+
 import Navigation from './component/Navigation'
 import ProductCard from './component/ProductCard'
 
 function App() {
   const generalStyles = {
-    margin: "0",
-    padding: "0",
-    boxSizing: "boarderBox",
-
     grid: {
       display: "grid",
       gridTemplateColumns: "repeat(3, 1fr)",
@@ -16,7 +12,7 @@ function App() {
     }
   }
   return (
-    <div style={generalStyles}>
+    <div>
       <Navigation />
       <h1>Get Started With Our Free Courses</h1>
       <div className='card' style={generalStyles.grid}>
